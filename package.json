@@ -20,6 +20,7 @@
   "homepage": "https://github.com/olizilla/ouroboros#readme",
   "dependencies": {
     "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
     "data-uri-to-buffer": "0.0.4",
     "express": "^4.13.4",
     "multiparty": "^4.1.2"

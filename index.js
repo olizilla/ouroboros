@@ -1,7 +1,7 @@
 var fs = require('fs')
 var path = require('path')
 var express = require('express')
-var multiparty = require('multiparty')
+var cors = require('cors')
 var bodyParser = require('body-parser')
 var format = require('util').format
 var dataUriToBuffer = require('data-uri-to-buffer')
@@ -10,6 +10,7 @@ var app = express()
 
 app.use(express.static('users'))
 app.use(bodyParser())
+app.use(cors())
 
 app.get('/', function (req, res) {
   fs.readdir('users', function (err, files) {
